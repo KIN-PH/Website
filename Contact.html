@@ -7,26 +7,28 @@
 <body bgcolor="#f2f2f2">
 
 <table align="center" bgcolor="#4A2323" width="1245" height="70">
-		<tr>
-			<td valign="middle">
-				&nbsp;&nbsp;&nbsp;&nbsp;<img src="logo.jpg" alt="Kin Logo" height="60">
-			</td>
-			
-			<td align="right" valign="middle">
-				<a href="Home.html"><img src="Home.png" alt="Home" width="80" hspace="10"></a>
-				<a href="About.html"><img src="About.png" alt="About" width="80" hspace="10"></a>
-				<a href="Artifact Collection.html"><img src="Artifacts.png" alt="Artifacts" width="80" hspace="10"></a>
-				<a href="Getting Here.html"><img src="Gettinghere.png" alt="Getting Here" width="80" hspace="10"></a>
-				<a href="Contact.html"><img src="Contact.png" alt="Contact" width="100"></a>
-			</td>
-			
-			<td align="center" valign="middle">
+	<tr>
+		<td valign="middle">
+			&nbsp;&nbsp;&nbsp;&nbsp;<img src="logo.jpg" alt="Kin Logo" height="60">
+		</td>
+		
+		<td align="right" valign="middle">
+			<a href="Home.html"><img src="Home.png" alt="Home" width="80" hspace="10"></a>
+			<a href="About.html"><img src="About.png" alt="About" width="80" hspace="10"></a>
+			<a href="Artifact Collection.html"><img src="Artifacts.png" alt="Artifacts" width="80" hspace="10"></a>
+			<a href="Getting Here.html"><img src="Gettinghere.png" alt="Getting Here" width="80" hspace="10"></a>
+			<a href="Contact.html"><img src="Contact.png" alt="Contact" width="100"></a>
+		</td>
+		
+		<td align="center" valign="middle">
             <form>
-			<br>
+			    <br>
                 <input type="text" name="search" placeholder="Search here..." size="30">
             </form>
         </td>
-	</table>
+	</tr>
+</table>
+
 <br>
 <table width="800" align="center" bgcolor="white" cellpadding="40">
     <tr>
@@ -53,13 +55,16 @@
             <br><hr color="#eeeeee"><br>
 
             <center>
-                <form>
+                <form action="https://formsubmit.co/bunnagwilkin@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New message from IFSU Museum Website">
+                    <input type="hidden" name="_next" value="https://KIN-PH.github.io/Website/thankyou.html">
+
                     <table width="80%" cellpadding="5">
                         <tr>
                             <td>
                                 <center>
 								<font face="Arial" size="2"><b>FULL NAME:</b></font><br>
-                                <input type="text" name="name" size="50" placeholder="Name...">
+                                <input type="text" name="name" size="50" placeholder="Name..." required>
 								</center>
                             </td>
                         </tr>
@@ -68,7 +73,7 @@
                                 <br>
 								<center>
                                 <font face="Arial" size="2"><b>MESSAGE:</b></font><br>
-                                <textarea rows="10" cols="52"  placeholder="Type here..."></textarea>
+                                <textarea name="message" rows="10" cols="52" placeholder="Type here..." required></textarea>
 								</center>
                             </td>
                         </tr>
@@ -99,6 +104,4 @@
 </table>
 
 </body>
-
 </html>
-
